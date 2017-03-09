@@ -1,0 +1,6 @@
+framework module Pods_FanbookCoverTests {
+  umbrella header "Pods-FanbookCoverTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
