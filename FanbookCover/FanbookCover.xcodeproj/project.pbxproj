@@ -16,6 +16,24 @@
 		6D3675E01E70F3A2001ABA4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D3675DF1E70F3A2001ABA4C /* Assets.xcassets */; };
 		6D3675E31E70F3A2001ABA4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D3675E11E70F3A2001ABA4C /* LaunchScreen.storyboard */; };
 		6D3675EE1E70F3A2001ABA4C /* FanbookCoverTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D3675ED1E70F3A2001ABA4C /* FanbookCoverTests.m */; };
+		6D57F2641E724D11002FD74B /* icon_comment.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D57F2611E724D11002FD74B /* icon_comment.png */; };
+		6D57F2651E724D11002FD74B /* icon_like.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D57F2621E724D11002FD74B /* icon_like.png */; };
+		6D57F2661E724D11002FD74B /* icon_view.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D57F2631E724D11002FD74B /* icon_view.png */; };
+		6DEE497D1E712C9400725EBA /* SFBSkin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEE497C1E712C9400725EBA /* SFBSkin.m */; };
+		6DF8BEAB1E70F9ED00B8822F /* GBInfiniteScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF8BEA81E70F9ED00B8822F /* GBInfiniteScrollView.m */; };
+		6DF8BEAC1E70F9ED00B8822F /* GBInfiniteScrollViewPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF8BEAA1E70F9ED00B8822F /* GBInfiniteScrollViewPage.m */; };
+		6DF8BEAF1E70FA7500B8822F /* HTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF8BEAE1E70FA7500B8822F /* HTTPClient.m */; };
+		6DF8BEB31E7104B300B8822F /* CoverCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF8BEB11E7104B300B8822F /* CoverCell.m */; };
+		6DF8BEB41E7104B300B8822F /* CoverCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DF8BEB21E7104B300B8822F /* CoverCell.xib */; };
+		6DF8BEC71E711FAD00B8822F /* SFBArtWorkAttache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF8BEB71E711FAD00B8822F /* SFBArtWorkAttache.m */; };
+		6DF8BEC81E711FAD00B8822F /* SFBArtWorkListImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF8BEB91E711FAD00B8822F /* SFBArtWorkListImage.m */; };
+		6DF8BEC91E711FAD00B8822F /* SFBArtWorkThumb.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF8BEBB1E711FAD00B8822F /* SFBArtWorkThumb.m */; };
+		6DF8BECA1E711FAD00B8822F /* SFBMainCoverData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF8BEBD1E711FAD00B8822F /* SFBMainCoverData.m */; };
+		6DF8BECB1E711FAD00B8822F /* SFBResponseArtWork.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF8BEC01E711FAD00B8822F /* SFBResponseArtWork.m */; };
+		6DF8BECC1E711FAD00B8822F /* SFBThumb.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF8BEC21E711FAD00B8822F /* SFBThumb.m */; };
+		6DF8BECD1E711FAD00B8822F /* SFBUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF8BEC41E711FAD00B8822F /* SFBUser.m */; };
+		6DF8BECE1E711FAD00B8822F /* SFBUserCountSummary.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF8BEC61E711FAD00B8822F /* SFBUserCountSummary.m */; };
+		6DF8BED11E71212300B8822F /* SFBMainCoverModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF8BED01E71212300B8822F /* SFBMainCoverModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +62,39 @@
 		6D3675E91E70F3A2001ABA4C /* FanbookCoverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FanbookCoverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D3675ED1E70F3A2001ABA4C /* FanbookCoverTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FanbookCoverTests.m; sourceTree = "<group>"; };
 		6D3675EF1E70F3A2001ABA4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D57F2611E724D11002FD74B /* icon_comment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_comment.png; sourceTree = "<group>"; };
+		6D57F2621E724D11002FD74B /* icon_like.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_like.png; sourceTree = "<group>"; };
+		6D57F2631E724D11002FD74B /* icon_view.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_view.png; sourceTree = "<group>"; };
+		6DEE497B1E712C9400725EBA /* SFBSkin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBSkin.h; sourceTree = "<group>"; };
+		6DEE497C1E712C9400725EBA /* SFBSkin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBSkin.m; sourceTree = "<group>"; };
+		6DF8BEA71E70F9ED00B8822F /* GBInfiniteScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBInfiniteScrollView.h; sourceTree = "<group>"; };
+		6DF8BEA81E70F9ED00B8822F /* GBInfiniteScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBInfiniteScrollView.m; sourceTree = "<group>"; };
+		6DF8BEA91E70F9ED00B8822F /* GBInfiniteScrollViewPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBInfiniteScrollViewPage.h; sourceTree = "<group>"; };
+		6DF8BEAA1E70F9ED00B8822F /* GBInfiniteScrollViewPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBInfiniteScrollViewPage.m; sourceTree = "<group>"; };
+		6DF8BEAD1E70FA7500B8822F /* HTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPClient.h; sourceTree = "<group>"; };
+		6DF8BEAE1E70FA7500B8822F /* HTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPClient.m; sourceTree = "<group>"; };
+		6DF8BEB01E7104B300B8822F /* CoverCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoverCell.h; sourceTree = "<group>"; };
+		6DF8BEB11E7104B300B8822F /* CoverCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoverCell.m; sourceTree = "<group>"; };
+		6DF8BEB21E7104B300B8822F /* CoverCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoverCell.xib; sourceTree = "<group>"; };
+		6DF8BEB61E711FAD00B8822F /* SFBArtWorkAttache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBArtWorkAttache.h; sourceTree = "<group>"; };
+		6DF8BEB71E711FAD00B8822F /* SFBArtWorkAttache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBArtWorkAttache.m; sourceTree = "<group>"; };
+		6DF8BEB81E711FAD00B8822F /* SFBArtWorkListImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBArtWorkListImage.h; sourceTree = "<group>"; };
+		6DF8BEB91E711FAD00B8822F /* SFBArtWorkListImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBArtWorkListImage.m; sourceTree = "<group>"; };
+		6DF8BEBA1E711FAD00B8822F /* SFBArtWorkThumb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBArtWorkThumb.h; sourceTree = "<group>"; };
+		6DF8BEBB1E711FAD00B8822F /* SFBArtWorkThumb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBArtWorkThumb.m; sourceTree = "<group>"; };
+		6DF8BEBC1E711FAD00B8822F /* SFBMainCoverData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBMainCoverData.h; sourceTree = "<group>"; };
+		6DF8BEBD1E711FAD00B8822F /* SFBMainCoverData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBMainCoverData.m; sourceTree = "<group>"; };
+		6DF8BEBE1E711FAD00B8822F /* SFBMainCoverModels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBMainCoverModels.h; sourceTree = "<group>"; };
+		6DF8BEBF1E711FAD00B8822F /* SFBResponseArtWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBResponseArtWork.h; sourceTree = "<group>"; };
+		6DF8BEC01E711FAD00B8822F /* SFBResponseArtWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBResponseArtWork.m; sourceTree = "<group>"; };
+		6DF8BEC11E711FAD00B8822F /* SFBThumb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBThumb.h; sourceTree = "<group>"; };
+		6DF8BEC21E711FAD00B8822F /* SFBThumb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBThumb.m; sourceTree = "<group>"; };
+		6DF8BEC31E711FAD00B8822F /* SFBUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBUser.h; sourceTree = "<group>"; };
+		6DF8BEC41E711FAD00B8822F /* SFBUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBUser.m; sourceTree = "<group>"; };
+		6DF8BEC51E711FAD00B8822F /* SFBUserCountSummary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBUserCountSummary.h; sourceTree = "<group>"; };
+		6DF8BEC61E711FAD00B8822F /* SFBUserCountSummary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBUserCountSummary.m; sourceTree = "<group>"; };
+		6DF8BECF1E71212300B8822F /* SFBMainCoverModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBMainCoverModel.h; sourceTree = "<group>"; };
+		6DF8BED01E71212300B8822F /* SFBMainCoverModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBMainCoverModel.m; sourceTree = "<group>"; };
 		AB925C3FCE293B6E1BFE14A5 /* Pods-FanbookCoverTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FanbookCoverTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FanbookCoverTests/Pods-FanbookCoverTests.release.xcconfig"; sourceTree = "<group>"; };
 		BCD6CF56F27A08D5E482D9B9 /* Pods_FanbookCover.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FanbookCover.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8474ECDAAEA6495F455F9A1 /* Pods-FanbookCover.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FanbookCover.release.xcconfig"; path = "Pods/Target Support Files/Pods-FanbookCover/Pods-FanbookCover.release.xcconfig"; sourceTree = "<group>"; };
@@ -113,6 +164,11 @@
 		6D3675D21E70F3A2001ABA4C /* FanbookCover */ = {
 			isa = PBXGroup;
 			children = (
+				6D57F2601E724D11002FD74B /* Resources */,
+				6DF8BEB51E711FAD00B8822F /* Models */,
+				6DF8BEA61E70F9ED00B8822F /* GBInfiniteScrollView */,
+				6DF8BEAD1E70FA7500B8822F /* HTTPClient.h */,
+				6DF8BEAE1E70FA7500B8822F /* HTTPClient.m */,
 				6D3675D61E70F3A2001ABA4C /* AppDelegate.h */,
 				6D3675D71E70F3A2001ABA4C /* AppDelegate.m */,
 				6D3675D91E70F3A2001ABA4C /* ViewController.h */,
@@ -122,6 +178,9 @@
 				6D3675E11E70F3A2001ABA4C /* LaunchScreen.storyboard */,
 				6D3675E41E70F3A2001ABA4C /* Info.plist */,
 				6D3675D31E70F3A2001ABA4C /* Supporting Files */,
+				6DF8BEB01E7104B300B8822F /* CoverCell.h */,
+				6DF8BEB11E7104B300B8822F /* CoverCell.m */,
+				6DF8BEB21E7104B300B8822F /* CoverCell.xib */,
 			);
 			path = FanbookCover;
 			sourceTree = "<group>";
@@ -141,6 +200,55 @@
 				6D3675EF1E70F3A2001ABA4C /* Info.plist */,
 			);
 			path = FanbookCoverTests;
+			sourceTree = "<group>";
+		};
+		6D57F2601E724D11002FD74B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6D57F2611E724D11002FD74B /* icon_comment.png */,
+				6D57F2621E724D11002FD74B /* icon_like.png */,
+				6D57F2631E724D11002FD74B /* icon_view.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6DF8BEA61E70F9ED00B8822F /* GBInfiniteScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				6DF8BEA71E70F9ED00B8822F /* GBInfiniteScrollView.h */,
+				6DF8BEA81E70F9ED00B8822F /* GBInfiniteScrollView.m */,
+				6DF8BEA91E70F9ED00B8822F /* GBInfiniteScrollViewPage.h */,
+				6DF8BEAA1E70F9ED00B8822F /* GBInfiniteScrollViewPage.m */,
+			);
+			path = GBInfiniteScrollView;
+			sourceTree = "<group>";
+		};
+		6DF8BEB51E711FAD00B8822F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6DEE497B1E712C9400725EBA /* SFBSkin.h */,
+				6DEE497C1E712C9400725EBA /* SFBSkin.m */,
+				6DF8BECF1E71212300B8822F /* SFBMainCoverModel.h */,
+				6DF8BED01E71212300B8822F /* SFBMainCoverModel.m */,
+				6DF8BEB61E711FAD00B8822F /* SFBArtWorkAttache.h */,
+				6DF8BEB71E711FAD00B8822F /* SFBArtWorkAttache.m */,
+				6DF8BEB81E711FAD00B8822F /* SFBArtWorkListImage.h */,
+				6DF8BEB91E711FAD00B8822F /* SFBArtWorkListImage.m */,
+				6DF8BEBA1E711FAD00B8822F /* SFBArtWorkThumb.h */,
+				6DF8BEBB1E711FAD00B8822F /* SFBArtWorkThumb.m */,
+				6DF8BEBC1E711FAD00B8822F /* SFBMainCoverData.h */,
+				6DF8BEBD1E711FAD00B8822F /* SFBMainCoverData.m */,
+				6DF8BEBE1E711FAD00B8822F /* SFBMainCoverModels.h */,
+				6DF8BEBF1E711FAD00B8822F /* SFBResponseArtWork.h */,
+				6DF8BEC01E711FAD00B8822F /* SFBResponseArtWork.m */,
+				6DF8BEC11E711FAD00B8822F /* SFBThumb.h */,
+				6DF8BEC21E711FAD00B8822F /* SFBThumb.m */,
+				6DF8BEC31E711FAD00B8822F /* SFBUser.h */,
+				6DF8BEC41E711FAD00B8822F /* SFBUser.m */,
+				6DF8BEC51E711FAD00B8822F /* SFBUserCountSummary.h */,
+				6DF8BEC61E711FAD00B8822F /* SFBUserCountSummary.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +341,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D3675E31E70F3A2001ABA4C /* LaunchScreen.storyboard in Resources */,
+				6D57F2651E724D11002FD74B /* icon_like.png in Resources */,
+				6D57F2661E724D11002FD74B /* icon_view.png in Resources */,
+				6DF8BEB41E7104B300B8822F /* CoverCell.xib in Resources */,
 				6D3675E01E70F3A2001ABA4C /* Assets.xcassets in Resources */,
+				6D57F2641E724D11002FD74B /* icon_comment.png in Resources */,
 				6D3675DE1E70F3A2001ABA4C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -345,8 +457,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DF8BECE1E711FAD00B8822F /* SFBUserCountSummary.m in Sources */,
+				6DF8BEC81E711FAD00B8822F /* SFBArtWorkListImage.m in Sources */,
+				6DF8BECA1E711FAD00B8822F /* SFBMainCoverData.m in Sources */,
+				6DF8BECD1E711FAD00B8822F /* SFBUser.m in Sources */,
+				6DF8BECC1E711FAD00B8822F /* SFBThumb.m in Sources */,
+				6DF8BEB31E7104B300B8822F /* CoverCell.m in Sources */,
+				6DF8BECB1E711FAD00B8822F /* SFBResponseArtWork.m in Sources */,
 				6D3675DB1E70F3A2001ABA4C /* ViewController.m in Sources */,
+				6DF8BEC91E711FAD00B8822F /* SFBArtWorkThumb.m in Sources */,
 				6D3675D81E70F3A2001ABA4C /* AppDelegate.m in Sources */,
+				6DF8BEAF1E70FA7500B8822F /* HTTPClient.m in Sources */,
+				6DF8BEAB1E70F9ED00B8822F /* GBInfiniteScrollView.m in Sources */,
+				6DEE497D1E712C9400725EBA /* SFBSkin.m in Sources */,
+				6DF8BEC71E711FAD00B8822F /* SFBArtWorkAttache.m in Sources */,
+				6DF8BEAC1E70F9ED00B8822F /* GBInfiniteScrollViewPage.m in Sources */,
+				6DF8BED11E71212300B8822F /* SFBMainCoverModel.m in Sources */,
 				6D3675D51E70F3A2001ABA4C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -484,6 +610,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A87J69XM38;
 				INFOPLIST_FILE = FanbookCover/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.smict.FanbookCover;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -497,6 +624,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A87J69XM38;
 				INFOPLIST_FILE = FanbookCover/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.smict.FanbookCover;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -548,6 +676,7 @@
 				6D3675F41E70F3A2001ABA4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6D3675F51E70F3A2001ABA4C /* Build configuration list for PBXNativeTarget "FanbookCoverTests" */ = {
 			isa = XCConfigurationList;
@@ -556,6 +685,7 @@
 				6D3675F71E70F3A2001ABA4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
