@@ -6,6 +6,7 @@ target 'FanbookCover' do
     use_frameworks!
     pod 'AFNetworking'
     pod 'SDWebImage'
+    pod 'GBInfiniteScrollView'
  
   # Pods for FanbookCover
 

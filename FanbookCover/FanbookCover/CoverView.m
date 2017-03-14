@@ -22,8 +22,9 @@
 
 
 @interface CoverView ()
-@property (weak, nonatomic) IBOutlet UIView *infoContainer;
 
+#pragma mark - UI
+@property (weak, nonatomic) IBOutlet UIView *infoContainer;
 @property (weak, nonatomic) IBOutlet UIImageView *ivCover;
 @property (weak, nonatomic) IBOutlet UIImageView *ivUserProfile;
 
@@ -37,6 +38,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *ivLike;
 
 
+#pragma mark - Alc
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcBottomOfInfoContainer;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcHeightOfInfoContainer;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcHeightOfProfileImage;
@@ -52,7 +54,6 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcTrailingOfLikeIcon;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcTrailingOfCommentIcon;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcTrailingOfViewIcon;
-
 
 @end
 
@@ -80,6 +81,8 @@
     self.lbLikeCount.font = self.lbViewCount.font;
     self.lbLikeCount.textColor = self.lbViewCount.textColor;
     
+    // infoContainer가 imageView뒤에 깔려있음
+    // 제일 앞으로 이동시켜줌
     [self bringSubviewToFront:self.infoContainer];
 }
 
@@ -88,8 +91,6 @@
     [super layoutSubviews];
     
     self.alcHeightOfInfoContainer.constant = WRATIO_SIZE(57.0f);
-    
-    //self.alcBottomOfInfoContainer.constant = WRATIO_SIZE(-57.0f);
     
     self.alcHeightOfProfileImage.constant = WRATIO_SIZE(37.0f);
     self.alcWidthOfProfileImage.constant = WRATIO_SIZE(37.0f);
@@ -135,6 +136,7 @@
     self.lbLikeCount.text = [self convertedCount:likeCount];
 }
 
+// 하단 userInfoContainer 애니메이션 처리
 - (void)setUserIfoViewAnimation
 {
     NSTimeInterval animationDuration = 0.5f;

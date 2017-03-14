@@ -37,7 +37,7 @@
     
 }
 
-#pragma mark - CollectionView
+#pragma mark - CollectionViewDataSource
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
@@ -55,6 +55,8 @@
 {
     CoverCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"CoverCell" forIndexPath:indexPath];
     
+    // CoverCell의 scrollView에서 정보를 보여주는 것
+    // 갖고 있는 coverList CoverCell로 전달
     cell.coverList = self.coverList;
     
     return cell;
@@ -116,6 +118,7 @@
 {
     NSLog(@"Login Success : %@",reuslt);
     
+    // 로그인 끝나고 cover 정보 요청
     [self reqMainCover];
 }
 
@@ -129,6 +132,7 @@
     {
         self.coverList = model.data.responseArtWork;
         
+        // cover정보 받은 후 reload
         dispatch_async(dispatch_get_main_queue(), ^{
             [self.collectionView reloadData];
         });

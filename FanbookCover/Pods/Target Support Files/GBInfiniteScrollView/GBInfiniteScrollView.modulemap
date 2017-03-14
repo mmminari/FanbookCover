@@ -1,0 +1,6 @@
+framework module GBInfiniteScrollView {
+  umbrella header "GBInfiniteScrollView-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -14,18 +14,23 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - GBInfiniteScrollView (1.8):
+    - GBInfiniteScrollView/Core (= 1.8)
+  - GBInfiniteScrollView/Core (1.8)
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
 
 DEPENDENCIES:
   - AFNetworking
+  - GBInfiniteScrollView
   - SDWebImage
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  GBInfiniteScrollView: aa8dc078cf1c86a10d65bfa4430c8cf324e18672
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
 
-PODFILE CHECKSUM: 4c8665bfc47f18139342ed9d232b5020105740ab
+PODFILE CHECKSUM: be39cf6ad8ec0bd1255c5000da3b2c1bfbdf2fd3
 
 COCOAPODS: 1.1.1

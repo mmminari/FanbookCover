@@ -10,9 +10,6 @@
 
 @interface CoverCell : UICollectionViewCell
 
-@property (strong, nonatomic) NSArray *coverList;
-
-
-
+@property (weak, nonatomic) NSArray *coverList;
 
 @end

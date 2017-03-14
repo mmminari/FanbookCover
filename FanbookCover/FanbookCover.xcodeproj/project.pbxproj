@@ -22,8 +22,6 @@
 		6D57F2691E7274FA002FD74B /* CoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D57F2681E7274FA002FD74B /* CoverView.m */; };
 		6D57F26B1E727519002FD74B /* CoverView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D57F26A1E727519002FD74B /* CoverView.xib */; };
 		6DEE497D1E712C9400725EBA /* SFBSkin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEE497C1E712C9400725EBA /* SFBSkin.m */; };
-		6DF8BEAB1E70F9ED00B8822F /* GBInfiniteScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF8BEA81E70F9ED00B8822F /* GBInfiniteScrollView.m */; };
-		6DF8BEAC1E70F9ED00B8822F /* GBInfiniteScrollViewPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF8BEAA1E70F9ED00B8822F /* GBInfiniteScrollViewPage.m */; };
 		6DF8BEAF1E70FA7500B8822F /* HTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF8BEAE1E70FA7500B8822F /* HTTPClient.m */; };
 		6DF8BEB31E7104B300B8822F /* CoverCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF8BEB11E7104B300B8822F /* CoverCell.m */; };
 		6DF8BEB41E7104B300B8822F /* CoverCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DF8BEB21E7104B300B8822F /* CoverCell.xib */; };
@@ -72,10 +70,6 @@
 		6D57F26A1E727519002FD74B /* CoverView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoverView.xib; sourceTree = "<group>"; };
 		6DEE497B1E712C9400725EBA /* SFBSkin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBSkin.h; sourceTree = "<group>"; };
 		6DEE497C1E712C9400725EBA /* SFBSkin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBSkin.m; sourceTree = "<group>"; };
-		6DF8BEA71E70F9ED00B8822F /* GBInfiniteScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBInfiniteScrollView.h; sourceTree = "<group>"; };
-		6DF8BEA81E70F9ED00B8822F /* GBInfiniteScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBInfiniteScrollView.m; sourceTree = "<group>"; };
-		6DF8BEA91E70F9ED00B8822F /* GBInfiniteScrollViewPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBInfiniteScrollViewPage.h; sourceTree = "<group>"; };
-		6DF8BEAA1E70F9ED00B8822F /* GBInfiniteScrollViewPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBInfiniteScrollViewPage.m; sourceTree = "<group>"; };
 		6DF8BEAD1E70FA7500B8822F /* HTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPClient.h; sourceTree = "<group>"; };
 		6DF8BEAE1E70FA7500B8822F /* HTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPClient.m; sourceTree = "<group>"; };
 		6DF8BEB01E7104B300B8822F /* CoverCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoverCell.h; sourceTree = "<group>"; };
@@ -171,7 +165,6 @@
 			children = (
 				6D57F2601E724D11002FD74B /* Resources */,
 				6DF8BEB51E711FAD00B8822F /* Models */,
-				6DF8BEA61E70F9ED00B8822F /* GBInfiniteScrollView */,
 				6DF8BEAD1E70FA7500B8822F /* HTTPClient.h */,
 				6DF8BEAE1E70FA7500B8822F /* HTTPClient.m */,
 				6D3675D61E70F3A2001ABA4C /* AppDelegate.h */,
@@ -218,17 +211,6 @@
 				6D57F2631E724D11002FD74B /* icon_view.png */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		6DF8BEA61E70F9ED00B8822F /* GBInfiniteScrollView */ = {
-			isa = PBXGroup;
-			children = (
-				6DF8BEA71E70F9ED00B8822F /* GBInfiniteScrollView.h */,
-				6DF8BEA81E70F9ED00B8822F /* GBInfiniteScrollView.m */,
-				6DF8BEA91E70F9ED00B8822F /* GBInfiniteScrollViewPage.h */,
-				6DF8BEAA1E70F9ED00B8822F /* GBInfiniteScrollViewPage.m */,
-			);
-			path = GBInfiniteScrollView;
 			sourceTree = "<group>";
 		};
 		6DF8BEB51E711FAD00B8822F /* Models */ = {
@@ -477,10 +459,8 @@
 				6DF8BEC91E711FAD00B8822F /* SFBArtWorkThumb.m in Sources */,
 				6D3675D81E70F3A2001ABA4C /* AppDelegate.m in Sources */,
 				6DF8BEAF1E70FA7500B8822F /* HTTPClient.m in Sources */,
-				6DF8BEAB1E70F9ED00B8822F /* GBInfiniteScrollView.m in Sources */,
 				6DEE497D1E712C9400725EBA /* SFBSkin.m in Sources */,
 				6DF8BEC71E711FAD00B8822F /* SFBArtWorkAttache.m in Sources */,
-				6DF8BEAC1E70F9ED00B8822F /* GBInfiniteScrollViewPage.m in Sources */,
 				6DF8BED11E71212300B8822F /* SFBMainCoverModel.m in Sources */,
 				6D57F2691E7274FA002FD74B /* CoverView.m in Sources */,
 				6D3675D51E70F3A2001ABA4C /* main.m in Sources */,
