@@ -7,19 +7,7 @@
 //
 
 #import "CoverView.h"
-#import <SDWebImage/UIImageView+WebCache.h>
-
-
-#define deviceWidth                                         [UIScreen mainScreen].bounds.size.width
-
-#define SCREEN_WIDTH                                        deviceWidth
-#define SCREEN_WIDTH_OF_IPHONE_6PLUS                        414.0f
-#define WRATIO_SIZE(standardSize)                           round(standardSize * (SCREEN_WIDTH / SCREEN_WIDTH_OF_IPHONE_6PLUS))
-
-#define YH_FONT_HELVETICANEUE(fontSize)             [UIFont fontWithName:@"HelveticaNeue" size:fontSize]
-#define YH_FONT_HELVETICANEUE_BOLD(fontSize)        [UIFont fontWithName:@"HelveticaNeue-Bold" size:fontSize]
-
-
+#import "Tools.h"
 
 @interface CoverView ()
 
@@ -37,6 +25,8 @@
 @property (weak, nonatomic) IBOutlet UIImageView *ivComment;
 @property (weak, nonatomic) IBOutlet UIImageView *ivLike;
 
+#pragma mark - Data
+@property (strong, nonatomic) Tools *tools;
 
 #pragma mark - Alc
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcBottomOfInfoContainer;
@@ -59,6 +49,14 @@
 
 @implementation CoverView
 
+- (void)awakeFromNib
+{
+    [super awakeFromNib];
+    
+    self.tools = [[Tools alloc]init];
+    
+}
+
 - (void)drawRect:(CGRect)rect
 {
     [super drawRect:rect];
@@ -67,13 +65,13 @@
     self.ivUserProfile.clipsToBounds = YES;
     
     self.lbTitle.font = YH_FONT_HELVETICANEUE_BOLD(WRATIO_SIZE(17.0f));
-    self.lbTitle.textColor = [self getColorByStringHexCode:@"f4c34e"];
+    self.lbTitle.textColor = [self.tools getColorByStringHexCode:@"f4c34e"];
     
     self.lbNick.font = YH_FONT_HELVETICANEUE(WRATIO_SIZE(13.0f));
-    self.lbNick.textColor = [self getColorByStringHexCode:@"ffffff"];
+    self.lbNick.textColor = [self.tools getColorByStringHexCode:@"ffffff"];
     
     self.lbViewCount.font = YH_FONT_HELVETICANEUE(WRATIO_SIZE(11.0f));
-    self.lbViewCount.textColor = [self getColorByStringHexCode:@"ffffff"];
+    self.lbViewCount.textColor = [self.tools getColorByStringHexCode:@"ffffff"];
     
     self.lbCommentCount.font = self.lbViewCount.font;
     self.lbCommentCount.textColor = self.lbViewCount.textColor;
@@ -112,12 +110,12 @@
 
 - (void)setCoverImageWithURLString:(NSString *)urlString
 {
-    [self setImageView:self.ivCover urlString:urlString placeholderImage:nil animation:YES];
+    [self.tools setImageView:self.ivCover urlString:urlString placeholderImage:nil animation:YES];
 }
 
 - (void)setUserProfileImage:(NSString *)urlString userNick:(NSString *)userNick
 {
-    [self setImageView:self.ivUserProfile urlString:urlString placeholderImage:nil animation:YES];
+    [self.tools setImageView:self.ivUserProfile urlString:urlString placeholderImage:nil animation:YES];
     
     self.lbNick.text = userNick;
 }
@@ -129,11 +127,11 @@
 
 - (void)setViewCount:(NSInteger)viewCount commentCount:(NSInteger)commetCount likeCount:(NSInteger)likeCount
 {
-    self.lbViewCount.text = [self convertedCount:viewCount ];
+    self.lbViewCount.text = [self.tools convertedCount:viewCount ];
     
-    self.lbCommentCount.text = [self convertedCount:commetCount];
+    self.lbCommentCount.text = [self.tools convertedCount:commetCount];
     
-    self.lbLikeCount.text = [self convertedCount:likeCount];
+    self.lbLikeCount.text = [self.tools convertedCount:likeCount];
 }
 
 // 하단 userInfoContainer 애니메이션 처리
@@ -153,123 +151,6 @@
 }
 
 #pragma mark - Private Method
--(void)setImageView:(UIImageView *)imageView urlString:(NSString *)urlString placeholderImage:(UIImage *)image animation:(BOOL)ani
-{
-    NSURL *url = [NSURL URLWithString:urlString];
-    [imageView sd_setImageWithURL:url placeholderImage:image completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL)
-     {
-         if(cacheType == SDImageCacheTypeNone)
-         {
-             if(ani)
-             {
-                 [imageView.layer addAnimation:[self fadeOutAnimationForChangeImage] forKey:@"fadeOutAnimationForChangeImage"];
-             }
-             
-         }
-     }];
-}
 
-- (CATransition *)fadeOutAnimationForChangeImage
-{
-    CATransition *transition = [CATransition animation];
-    transition.duration = 1.0f;
-    transition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
-    transition.type = kCATransitionFade;
-    
-    return transition;
-}
-
-- (UIColor *)getColorByStringHexCode:(NSString *)strHexCode
-{
-    UIColor *result = nil;
-    NSScanner *scanner = nil;
-    unsigned redCode, greenCode, blueCode;
-    NSRange r;
-    
-    r.location = 0;
-    r.length = 2;
-    NSString *redCodeStr = [strHexCode substringWithRange:r];
-    
-    r.location = 2;
-    NSString *greenCodeStr = [strHexCode substringWithRange:r];
-    
-    r.location = 4;
-    NSString *blueCodeStr = [strHexCode substringWithRange:r];
-    
-    scanner = [NSScanner scannerWithString:redCodeStr];
-    [scanner scanHexInt:&redCode];
-    
-    scanner = [NSScanner scannerWithString:greenCodeStr];
-    [scanner scanHexInt:&greenCode];
-    
-    scanner = [NSScanner scannerWithString:blueCodeStr];
-    [scanner scanHexInt:&blueCode];
-    
-    result = [UIColor colorWithRed:redCode/255.0f green:greenCode/255.0f blue:blueCode/255.0f alpha:1];
-    
-    return result;
-}
-
-- (NSString *)convertedCount:(double)count
-{
-    NSString *result = nil;
-    double devideCount = 0;
-    NSString *unitText = nil;
-    NSString *formmater = nil;
-    
-    if (count < 1000) {
-        result = [NSString stringWithFormat:@"%zd",(NSInteger)count];
-    }
-    else
-    {
-        if (count >= 1000 && count < 1000000) // 1K
-        {
-            devideCount = count / 1000.0f;
-            unitText = @"K";
-        }
-        else if (count >= 1000000 && count < 1000000000) // 1M
-        {
-            devideCount = count / 1000000.0f;
-            unitText = @"M";
-        }
-        else if (count >= 1000000000 && count < 1000000000000) // 1B
-        {
-            devideCount = count / 1000000000.0f;
-            unitText = @"B";
-        }
-        else if (count >= 1000000000000 && count < 1000000000000000) // 1T
-        {
-            devideCount = count / 1000000000000.0f;
-            unitText = @"T";
-        }
-        
-        if ((NSInteger)count % 10)
-        {
-            result = [NSString stringWithFormat:@"%.1f", devideCount];
-            
-            NSArray *comp = [result componentsSeparatedByString:@"."];
-            NSString *firstComp = [comp firstObject];
-            NSString *lastComp = [comp lastObject];
-            
-            // 소수 첫째자리가 0일경우 0 제거
-            if ([lastComp isEqualToString:@"0"])
-            {
-                result = [NSString stringWithFormat:@"%@%@",firstComp, unitText];
-            }
-            else
-            {
-                result = [result stringByAppendingString:unitText];
-            }
-        }
-        else
-        {
-            NSInteger newDevideCount = devideCount;
-            formmater = @"%zd%@";
-            result = [NSString stringWithFormat:formmater,newDevideCount,unitText];
-        }
-    }
-    
-    return result;
-}
 
 @end

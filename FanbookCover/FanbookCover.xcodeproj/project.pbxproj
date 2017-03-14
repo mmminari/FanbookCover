@@ -21,6 +21,7 @@
 		6D57F2661E724D11002FD74B /* icon_view.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D57F2631E724D11002FD74B /* icon_view.png */; };
 		6D57F2691E7274FA002FD74B /* CoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D57F2681E7274FA002FD74B /* CoverView.m */; };
 		6D57F26B1E727519002FD74B /* CoverView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D57F26A1E727519002FD74B /* CoverView.xib */; };
+		6D9BF23C1E77C2E2004A38C1 /* Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9BF23B1E77C2E2004A38C1 /* Tools.m */; };
 		6DEE497D1E712C9400725EBA /* SFBSkin.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEE497C1E712C9400725EBA /* SFBSkin.m */; };
 		6DF8BEAF1E70FA7500B8822F /* HTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF8BEAE1E70FA7500B8822F /* HTTPClient.m */; };
 		6DF8BEB31E7104B300B8822F /* CoverCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF8BEB11E7104B300B8822F /* CoverCell.m */; };
@@ -68,6 +69,8 @@
 		6D57F2671E7274FA002FD74B /* CoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoverView.h; sourceTree = "<group>"; };
 		6D57F2681E7274FA002FD74B /* CoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoverView.m; sourceTree = "<group>"; };
 		6D57F26A1E727519002FD74B /* CoverView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CoverView.xib; sourceTree = "<group>"; };
+		6D9BF23A1E77C2E2004A38C1 /* Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tools.h; sourceTree = "<group>"; };
+		6D9BF23B1E77C2E2004A38C1 /* Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tools.m; sourceTree = "<group>"; };
 		6DEE497B1E712C9400725EBA /* SFBSkin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFBSkin.h; sourceTree = "<group>"; };
 		6DEE497C1E712C9400725EBA /* SFBSkin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFBSkin.m; sourceTree = "<group>"; };
 		6DF8BEAD1E70FA7500B8822F /* HTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPClient.h; sourceTree = "<group>"; };
@@ -182,6 +185,8 @@
 				6D57F2671E7274FA002FD74B /* CoverView.h */,
 				6D57F2681E7274FA002FD74B /* CoverView.m */,
 				6D57F26A1E727519002FD74B /* CoverView.xib */,
+				6D9BF23A1E77C2E2004A38C1 /* Tools.h */,
+				6D9BF23B1E77C2E2004A38C1 /* Tools.m */,
 			);
 			path = FanbookCover;
 			sourceTree = "<group>";
@@ -459,6 +464,7 @@
 				6DF8BEC91E711FAD00B8822F /* SFBArtWorkThumb.m in Sources */,
 				6D3675D81E70F3A2001ABA4C /* AppDelegate.m in Sources */,
 				6DF8BEAF1E70FA7500B8822F /* HTTPClient.m in Sources */,
+				6D9BF23C1E77C2E2004A38C1 /* Tools.m in Sources */,
 				6DEE497D1E712C9400725EBA /* SFBSkin.m in Sources */,
 				6DF8BEC71E711FAD00B8822F /* SFBArtWorkAttache.m in Sources */,
 				6DF8BED11E71212300B8822F /* SFBMainCoverModel.m in Sources */,
