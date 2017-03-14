@@ -74,6 +74,7 @@
 }
 
 #pragma mark - Request
+// 로그인 요청
 - (void)reqLogin
 {
     NSMutableDictionary *param = [NSMutableDictionary dictionary];
@@ -101,6 +102,7 @@
     }];
 }
 
+// 커버 정보 요청
 - (void)reqMainCover
 {
     NSDictionary *param = @{ @"userIdx" : @(1035) };
