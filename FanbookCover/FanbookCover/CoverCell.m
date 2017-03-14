@@ -53,11 +53,13 @@
 
 - (void)infiniteScrollViewDidScrollNextPage:(GBInfiniteScrollView *)infiniteScrollView
 {
+    // 다음 페이지로 스크롤이 끝났을 경우 userInfoContainer 애니메이션 처리
     [self startCoverInfoViewAnimationWithScrollView:infiniteScrollView];
 }
 
 - (void)infiniteScrollViewDidScrollPreviousPage:(GBInfiniteScrollView *)infiniteScrollView
 {
+    // 이전 페이지로 스크롤이 끝났을 경우 userInfoContainer 애니메이션 처리
     [self startCoverInfoViewAnimationWithScrollView:infiniteScrollView];
 }
 
